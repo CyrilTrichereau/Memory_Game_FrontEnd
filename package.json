@@ -1,0 +1,26 @@
+{
+  "name": "oclock_memory_game",
+  "version": "1.0.0",
+  "description": "Technical Test for Web Developer Full Stack ",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CyrilTrichereau/OClock_Memory_Game.git"
+  },
+  "author": {
+    "name": "Cyril Trichereau",
+    "email": "contact@ctch.dev",
+    "portfolio": "https://ctch.dev/",
+    "github": "https://github.com/CyrilTrichereau/",
+    "linkedin": "https://www.linkedin.com/in/cyril-trichereau-4b36a1b5/"
+  },
+  "license": "ISC",
+  "main": "./js/index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:css/styles.css --style compressed"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "browserslist": "last 4 versions"
+}

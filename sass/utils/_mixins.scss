@@ -1,0 +1,26 @@
+// Mixins Styles
+
+// Media Queries
+@mixin sizeTablet {
+  @media screen and (min-width: map-get($breakpoints, minTablet)) and (max-width: map-get($breakpoints, maxTablet)) {
+    @content;
+  }
+}
+
+@mixin sizeDesktop {
+  @media screen and (min-width: map-get($breakpoints, minDesktop)) and (max-width: map-get($breakpoints, maxDesktop)) {
+    @content;
+  }
+}
+
+@mixin size4k {
+  @media screen and (min-width: map-get($breakpoints, min4k)) {
+    @content;
+  }
+}
+
+@mixin sizeNoMobile {
+  @media screen and (min-width: map-get($breakpoints, minTablet)) {
+    @content;
+  }
+}

@@ -1,0 +1,39 @@
+// Universal Styles for Basic HTML Tags
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // 10px div by def of 16px
+  font-size: 62.5%;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+}
+footer {
+  width: 100%;
+}
