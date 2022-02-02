@@ -1,6 +1,24 @@
 // Variables for Styles
 
 // Colors
+$colorPrimary: #0ac3a7;
+$colorSecondary: #fffdd8;
+$colorWhite: #ffffff;
+$colorBlack: #000000;
+$colorDanger: #d83a37;
+$colorBlue: #234b78;
+$colorOrange: #ffb400;
+$colorGreen: #5e9d07;
+$colorDark: #151000;
+$colorPrimaryLight: lighten($colorPrimary, 5%);
+$colorSecondaryLight: lighten($colorSecondary, 5%);
+
+// Text
+$fontSource: "Source Sans Pro", sans-serif, "Arial Black", Arial, Verdana;
+$fontSuper: "Supermercado One", sans-serif, "Arial Black", Arial, Verdana;
+
+// Sizes
+$sizeCardGame: 80px;
 
 // Breakpoints
 $breakpoints: (

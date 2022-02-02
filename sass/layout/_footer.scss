@@ -1,1 +1,19 @@
 // Styles for Footer
+.footerBan {
+  width: 100%;
+  padding: 2rem 1rem;
+  background: $colorPrimary;
+  @include sizeNoMobile {
+    padding: 2rem 2rem;
+  }
+  &Text {
+    width: 100%;
+    font-size: 1.1rem;
+    color: $colorSecondary;
+    font-family: $fontSuper;
+    text-align: center;
+    @include sizeNoMobile {
+      font-size: 1.6rem;
+    }
+  }
+}

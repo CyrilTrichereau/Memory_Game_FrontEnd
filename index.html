@@ -70,5 +70,191 @@
 
   <!-- ------------ -->
   <!-- BODY -->
-  <body></body>
+  <body>
+    <!-- --------------------- -->
+    <!-- HEADER -->
+    <header>
+      <div class="headerBan" id="test">
+        <img
+          src="https://oclock.io/images/common/logo-short-cream.svg?v=66184eb7"
+          alt="Logo O'Clock"
+          class="headerBanLogo"
+        />
+        <h1 class="headerBanText">Jeu de Mémoire</h1>
+      </div>
+    </header>
+
+    <!-- --------------------- -->
+    <!-- MAIN -->
+    <main>
+      <!-- Section Results -->
+      <section class="sectionResults">
+        <h2 class="resultsTitle">Résultats</h2>
+        <div class="resultsBan">
+          <div class="resultsBanBestScore">
+            <p class="resultsBanBestScoreText">Meilleur Temps</p>
+            <p class="resultsBanBestScoreValue" id="bestScore">05:00</p>
+          </div>
+          <div class="resultsBanYourScore">
+            <p class="resultsBanYourScoreText">Temps restant</p>
+            <p class="resultsBanYourScoreValue" id="yourScore">05:00</p>
+          </div>
+        </div>
+        <p></p>
+      </section>
+
+      <!-- Section Board Game -->
+      <section class="sectionGame">
+        <h2>Tableau de Jeux</h2>
+        <div class="sectionGameCardsContainer"></div>
+        <button
+          class="sectionGameButton tryAgainButton"
+          id="restartButtonOnGame"
+        >
+          Rejouer
+        </button>
+      </section>
+
+      <!-- Section Rules -->
+      <section class="sectionRules">
+        <h2>Régles du jeu</h2>
+        <p class="rulesText">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non
+          lacus quis odio semper luctus. Mauris ut interdum tortor. Nulla
+          consectetur turpis ut ultricies mollis. Nam non ipsum eros. Ut semper
+          volutpat odio, eget tempor nunc pellentesque eget. Nulla eleifend odio
+          vitae nisi laoreet scelerisque non eu lectus. Phasellus dapibus ex
+          sem, vitae ornare elit venenatis ut. Integer molestie odio sit amet
+          est placerat porttitor. Nunc dignissim tortor ac nunc ultricies, sed
+          suscipit eros ultrices. Aliquam erat volutpat. Duis auctor elit nisi,
+          at eleifend sapien vulputate eu. Quisque quis orci vitae nulla
+          sollicitudin tempor. Pellentesque pretium lectus diam, et porta ante
+          ullamcorper in. Phasellus sollicitudin vulputate hendrerit. In aliquet
+          aliquam tortor. Donec auctor mi felis, et euismod neque venenatis eu.
+        </p>
+        <p class="rulesText">
+          Praesent ac sem ligula. Nullam tristique urna ac tellus dictum
+          gravida. Etiam maximus at ipsum tempus dictum. Pellentesque tristique
+          erat ut nunc convallis tempor. Etiam volutpat magna lacus, at
+          elementum nisi fringilla in. Quisque sit amet nunc a ex ornare
+          scelerisque eu ut ipsum. Mauris hendrerit ornare massa eget egestas.
+          Aliquam dictum sodales urna, et ullamcorper nisl tempus vitae. Quisque
+          imperdiet mauris ac neque congue, eu cursus erat tempus. Pellentesque
+          sapien sem, vulputate gravida ante eget, bibendum scelerisque velit.
+        </p>
+        <p class="rulesText">
+          Orci varius natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus. Cras feugiat rhoncus euismod. Donec ac sem
+          pellentesque, tempor massa sit amet, congue nulla. Nulla a molestie
+          diam. Suspendisse viverra sed felis a sagittis. Sed faucibus est
+          sollicitudin, placerat mauris nec, rutrum diam. Fusce felis dolor,
+          feugiat tincidunt leo eu, maximus pharetra metus. Nulla et risus eget
+          augue egestas mollis vel condimentum dui. Praesent vestibulum sapien
+          nibh, vitae aliquam neque dictum facilisis. Vestibulum ornare aliquet
+          velit, ut pretium erat tempus eu. Pellentesque neque augue, finibus
+          sit amet ligula quis, feugiat tristique urna. Duis malesuada, orci
+          vitae volutpat tempor, felis sapien hendrerit eros, at condimentum
+          lorem libero quis massa. Nunc sed congue turpis, suscipit iaculis
+          diam. Orci varius natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus.
+        </p>
+        <p class="rulesText">
+          Nullam pretium tortor in enim posuere imperdiet. Cras venenatis dolor
+          dictum, vulputate urna sed, malesuada quam. Etiam a enim vehicula,
+          tristique lorem id, porta erat. Cras volutpat quis magna nec
+          tincidunt. Aenean sed facilisis tellus. Suspendisse fringilla, mi sed
+          volutpat varius, leo elit suscipit mi, a porttitor velit massa non
+          purus. In orci dolor, interdum lacinia massa vel, pellentesque
+          ultricies justo. Suspendisse facilisis eros tincidunt justo egestas, a
+          porta justo ultrices. Etiam eu turpis elementum, sollicitudin sem
+          quis, maximus nulla.
+        </p>
+      </section>
+
+      <!-- Section Victory pop in -->
+      <section class="sectionVictory">
+        <div class="victoryCard" id="victoryMessage">
+          <h2 class="victoryCardTitle">🥳 Vous avez gagné !!! 🎉</h2>
+          <div class="victoryCardBlock">
+            <figure class="victoryCardBlockGif">
+              <!-- 
+                https://media3.giphy.com/media/IwAZ6dvvvaTtdI8SD5/giphy.gif?cid=ecf05e47987ozz63g1b1qu3j6osxznx5hqiujprhrt4k4wld&rid=giphy.gif&ct=g  
+              -->
+              <img
+                src="https://cdn.pixabay.com/photo/2015/01/08/18/24/children-593313_960_720.jpg"
+                alt="Gif illustrant la victoire"
+                class="victoryCardBlockGifImage"
+              />
+              <figcaption class="victoryCardBlockGifSubtitle">
+                Merci à Giphy pour ce gif animé !
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/fr/a/a0/Giphy_logo.gif"
+                  alt="Logo Giphy"
+                  class="victoryCardBlockGifSubtitleLogo"
+                />
+              </figcaption>
+            </figure>
+
+            <div class="victoryCardBlockScores">
+              <div class="victoryCardBlockScoresYourScore">
+                <p class="victoryCardBlockScoresYourScoreText">Votre temps :</p>
+                <p class="victoryCardBlockScoresYourScoreTime">10:00</p>
+              </div>
+              <div class="victoryCardBlockScoresBestTimes">
+                <h3 class="victoryCardBlockScoresBestTimesTitle">
+                  ✨ Meilleurs temps ✨
+                </h3>
+                <div class="victoryCardBlockScoresBestTimesLine">
+                  <p class="victoryCardBlockScoresBestTimesLineRanking">1er</p>
+                  <p class="victoryCardBlockScoresBestTimesLineName">David P</p>
+                  <p class="victoryCardBlockScoresBestTimesLineTime">10:00</p>
+                </div>
+                <div class="victoryCardBlockScoresBestTimesLine">
+                  <p class="victoryCardBlockScoresBestTimesLineRanking">1er</p>
+                  <p class="victoryCardBlockScoresBestTimesLineName">David P</p>
+                  <p class="victoryCardBlockScoresBestTimesLineTime">10:00</p>
+                </div>
+                <div class="victoryCardBlockScoresBestTimesLine">
+                  <p class="victoryCardBlockScoresBestTimesLineRanking">1er</p>
+                  <p class="victoryCardBlockScoresBestTimesLineName">David P</p>
+                  <p class="victoryCardBlockScoresBestTimesLineTime">10:00</p>
+                </div>
+                <div class="victoryCardBlockScoresBestTimesLine">
+                  <p class="victoryCardBlockScoresBestTimesLineRanking">1er</p>
+                  <p class="victoryCardBlockScoresBestTimesLineName">David P</p>
+                  <p class="victoryCardBlockScoresBestTimesLineTime">10:00</p>
+                </div>
+                <div class="victoryCardBlockScoresBestTimesLine">
+                  <p class="victoryCardBlockScoresBestTimesLineRanking">1er</p>
+                  <p class="victoryCardBlockScoresBestTimesLineName">David P</p>
+                  <p class="victoryCardBlockScoresBestTimesLineTime">10:00</p>
+                </div>
+                <div class="victoryCardBlockScoresBestTimesLine">
+                  <p class="victoryCardBlockScoresBestTimesLineRanking">1er</p>
+                  <p class="victoryCardBlockScoresBestTimesLineName">David P</p>
+                  <p class="victoryCardBlockScoresBestTimesLineTime">10:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="victoryCardButton tryAgainButton"
+            id="restartButtonVictory"
+          >
+            Rejouer
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- --------------------- -->
+    <!-- FOOTER -->
+    <footer>
+      <div class="footerBan">
+        <p class="footerBanText">🚀 Réalisé par Cyril Trichereau</p>
+      </div>
+    </footer>
+    <!-- Javascripts File-->
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
 </html>

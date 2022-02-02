@@ -1,0 +1,113 @@
+.victoryCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 10%;
+  width: 90%;
+  max-width: 600px;
+  left: 100%;
+  padding: 2rem;
+  gap: 2rem;
+  background: $colorDark;
+  border-radius: 10px;
+  box-shadow: 5px -5px 0 0 $colorDanger;
+  overflow: hidden;
+
+  &Title {
+    width: 100%;
+    text-align: center;
+    font-size: 2.8rem;
+  }
+  &Block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    &Gif {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 5px 5px 0 0 $colorBlue;
+      &Image {
+        width: 100%;
+      }
+      &Subtitle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1.1rem;
+        &Logo {
+          width: 60px;
+          opacity: 0.8;
+        }
+      }
+    }
+    &Scores {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      &YourScore {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+        &Text {
+          font-size: 1.8rem;
+        }
+        &Time {
+          font-size: 2.2rem;
+        }
+      }
+      &BestTimes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2rem 0;
+        gap: 1rem;
+        &Title {
+          width: 100%;
+          font-size: 1.8rem;
+        }
+        &Line {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          gap: 1rem;
+          &Ranking {
+            font-size: 1.8rem;
+          }
+          &Name {
+            font-size: 1.4rem;
+          }
+          &Time {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+  &Button {
+    z-index: 99;
+  }
+}
+.revealMessage {
+  left: unset;
+}

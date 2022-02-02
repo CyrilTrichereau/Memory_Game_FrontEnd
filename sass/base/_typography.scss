@@ -8,10 +8,25 @@ h4,
 h5,
 h6,
 p,
-a {
+a,
+button {
   color: $colorSecondary;
   text-align: center;
+  font-family: $fontSource;
   margin: 0;
   padding: 0;
   text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: $fontSuper;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-indent: 2rem;
+  text-align: left;
+  width: 100%;
+  padding: 1rem 0 0.5rem 0;
 }

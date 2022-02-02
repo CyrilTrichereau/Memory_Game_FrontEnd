@@ -1,0 +1,13 @@
+.tryAgainButton {
+  padding: 1rem 2rem;
+  border: none;
+  background: $colorBlue;
+  box-shadow: 2px 2px 0 0 $colorPrimary;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  &:hover {
+    transform: scale(1.1);
+    background: $colorBlue;
+    box-shadow: 5px 5px 0 0 $colorDanger;
+  }
+}

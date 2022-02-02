@@ -1,1 +1,28 @@
 // Styles for Header
+.headerBan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  padding: 0.5rem;
+  background: $colorPrimary;
+  @include sizeNoMobile {
+    padding: 1rem;
+  }
+  &Logo {
+    width: 2.5rem;
+    @include sizeNoMobile {
+      width: 4rem;
+    }
+  }
+  &Text {
+    font-size: 2.3rem;
+    color: $colorSecondary;
+    font-family: $fontSuper;
+    @include sizeNoMobile {
+      font-size: 3rem;
+    }
+  }
+}
