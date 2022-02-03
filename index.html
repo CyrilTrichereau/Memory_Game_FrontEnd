@@ -29,34 +29,6 @@
       content="Un jeu qui permet de faire travailler sa mémoire tout en s'amusant !"
     />
 
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="MemoryGameOClock" />
-    <meta name="twitter:site" content="@MemoryGameOClock" />
-    <meta name="twitter:title" content="Memory Game pour O'Clock !" />
-    <meta
-      name="twitter:description"
-      content="Un jeu qui permet de faire travailler sa mémoire tout en s'amusant !"
-    />
-    <meta name="twitter:creator" content="@TrichereauCyril" />
-
-    <!-- Twitter Summary card images must be at least 200x200px -->
-    <meta name="twitter:image" content="./img/printscreen.png" />
-
-    <!-- Open Graph data -->
-    <meta property="og:title" content="Memory Game pour O'Clock !" />
-    <meta property="og:type" content="Site Internet Officiel" />
-    <meta property="og:url" content="https://MemoryGameOClock.fr/" />
-    <meta property="og:image" content="https://orinoco/img/printscreen.png" />
-    <meta
-      property="og:description"
-      content="Un jeu qui permet de faire travailler sa mémoire tout en s'amusant !"
-    />
-    <meta property="og:site_name" content="Memory Game pour O'Clock !" />
-    <meta
-      property="fb:admins"
-      content="https://www.facebook.com/MemoryGameOClock/"
-    />
-
     <!-- ------------ -->
     <!-- --------- SCRIPTS --------- -->
     <!-- Google Font API -->
@@ -89,24 +61,24 @@
     <main>
       <!-- Section Results -->
       <section class="sectionResults">
-        <h2 class="resultsTitle">Résultats</h2>
-        <div class="resultsBan">
-          <div class="resultsBanBestScore">
-            <p class="resultsBanBestScoreText">Meilleur Temps</p>
-            <p class="resultsBanBestScoreValue" id="bestScore">05:00</p>
-          </div>
-          <div class="resultsBanYourScore">
-            <p class="resultsBanYourScoreText">Temps restant</p>
-            <p class="resultsBanYourScoreValue" id="yourScore">05:00</p>
-          </div>
-        </div>
+        <h2 class="resultsTitle">Meilleurs Résultats</h2>
+        <div class="resultsBan" id="resultsBan"></div>
         <p></p>
       </section>
 
       <!-- Section Board Game -->
       <section class="sectionGame">
-        <h2>Tableau de Jeux</h2>
+        <div class="gameBoardHeader">
+          <h2>Tableau de Jeux</h2>
+          <div class="gameBoardHeaderYourScore">
+            <p class="gameBoardHeaderYourScoreText">Temps restant</p>
+            <p class="gameBoardHeaderYourScoreValue" id="yourScore">05:00</p>
+          </div>
+        </div>
         <div class="sectionGameCardsContainer"></div>
+        <div class="progressBar">
+          <div class="progressBarBackground" id="progressBarBackground"></div>
+        </div>
         <button
           class="sectionGameButton tryAgainButton"
           id="restartButtonOnGame"
@@ -177,11 +149,8 @@
           <h2 class="victoryCardTitle">🥳 Vous avez gagné !!! 🎉</h2>
           <div class="victoryCardBlock">
             <figure class="victoryCardBlockGif">
-              <!-- 
-                https://media3.giphy.com/media/IwAZ6dvvvaTtdI8SD5/giphy.gif?cid=ecf05e47987ozz63g1b1qu3j6osxznx5hqiujprhrt4k4wld&rid=giphy.gif&ct=g  
-              -->
               <img
-                src="https://cdn.pixabay.com/photo/2015/01/08/18/24/children-593313_960_720.jpg"
+                src="https://media3.giphy.com/media/IwAZ6dvvvaTtdI8SD5/giphy.gif?cid=ecf05e47987ozz63g1b1qu3j6osxznx5hqiujprhrt4k4wld&rid=giphy.gif&ct=g"
                 alt="Gif illustrant la victoire"
                 class="victoryCardBlockGifImage"
               />
@@ -198,48 +167,57 @@
             <div class="victoryCardBlockScores">
               <div class="victoryCardBlockScoresYourScore">
                 <p class="victoryCardBlockScoresYourScoreText">Votre temps :</p>
-                <p class="victoryCardBlockScoresYourScoreTime">10:00</p>
+                <p
+                  class="victoryCardBlockScoresYourScoreTime"
+                  id="yourFinalScore"
+                >
+                  5:00
+                </p>
               </div>
               <div class="victoryCardBlockScoresBestTimes">
                 <h3 class="victoryCardBlockScoresBestTimesTitle">
                   ✨ Meilleurs temps ✨
                 </h3>
-                <div class="victoryCardBlockScoresBestTimesLine">
-                  <p class="victoryCardBlockScoresBestTimesLineRanking">1er</p>
-                  <p class="victoryCardBlockScoresBestTimesLineName">David P</p>
-                  <p class="victoryCardBlockScoresBestTimesLineTime">10:00</p>
-                </div>
-                <div class="victoryCardBlockScoresBestTimesLine">
-                  <p class="victoryCardBlockScoresBestTimesLineRanking">1er</p>
-                  <p class="victoryCardBlockScoresBestTimesLineName">David P</p>
-                  <p class="victoryCardBlockScoresBestTimesLineTime">10:00</p>
-                </div>
-                <div class="victoryCardBlockScoresBestTimesLine">
-                  <p class="victoryCardBlockScoresBestTimesLineRanking">1er</p>
-                  <p class="victoryCardBlockScoresBestTimesLineName">David P</p>
-                  <p class="victoryCardBlockScoresBestTimesLineTime">10:00</p>
-                </div>
-                <div class="victoryCardBlockScoresBestTimesLine">
-                  <p class="victoryCardBlockScoresBestTimesLineRanking">1er</p>
-                  <p class="victoryCardBlockScoresBestTimesLineName">David P</p>
-                  <p class="victoryCardBlockScoresBestTimesLineTime">10:00</p>
-                </div>
-                <div class="victoryCardBlockScoresBestTimesLine">
-                  <p class="victoryCardBlockScoresBestTimesLineRanking">1er</p>
-                  <p class="victoryCardBlockScoresBestTimesLineName">David P</p>
-                  <p class="victoryCardBlockScoresBestTimesLineTime">10:00</p>
-                </div>
-                <div class="victoryCardBlockScoresBestTimesLine">
-                  <p class="victoryCardBlockScoresBestTimesLineRanking">1er</p>
-                  <p class="victoryCardBlockScoresBestTimesLineName">David P</p>
-                  <p class="victoryCardBlockScoresBestTimesLineTime">10:00</p>
-                </div>
+                <div
+                  class="victoryCardBlockScoresBestTimesContainer"
+                  id="bestTimesContainer"
+                ></div>
               </div>
             </div>
           </div>
           <button
             class="victoryCardButton tryAgainButton"
             id="restartButtonVictory"
+          >
+            Rejouer
+          </button>
+        </div>
+      </section>
+
+      <!-- Section Loser pop in -->
+      <section class="sectionLose">
+        <div class="loserCard" id="loserMessage">
+          <h2 class="loserCardTitle">😥 ... Vous avez perdu ... 😭</h2>
+          <div class="loserCardBlock">
+            <figure class="loserCardBlockGif">
+              <img
+                src="https://media3.giphy.com/media/Khx2u2qrqijew/giphy.gif?cid=ecf05e477i0syikth9hfbztko02ts6wxta6ko42kbpbrt6pt&rid=giphy.gif&ct=g"
+                alt="Gif illustrant la victoire"
+                class="loserCardBlockGifImage"
+              />
+              <figcaption class="loserCardBlockGifSubtitle">
+                Merci à Giphy pour ce gif animé !
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/fr/a/a0/Giphy_logo.gif"
+                  alt="Logo Giphy"
+                  class="loserCardBlockGifSubtitleLogo"
+                />
+              </figcaption>
+            </figure>
+          </div>
+          <button
+            class="loserCardButton tryAgainButton"
+            id="restartButtonLoser"
           >
             Rejouer
           </button>
@@ -255,6 +233,6 @@
       </div>
     </footer>
     <!-- Javascripts File-->
-    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

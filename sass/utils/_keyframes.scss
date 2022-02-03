@@ -11,3 +11,27 @@
     opacity: 0;
   }
 }
+
+// Left Swipe
+@keyframes leftSwipe {
+  0% {
+    left: unset;
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    left: unset;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// Progress bar
+@keyframes barInProgress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: translateX(1);
+  }
+}

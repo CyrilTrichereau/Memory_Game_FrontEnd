@@ -1,5 +1,5 @@
-// Style for victory pop in
-.victoryCard {
+// Style for for the loser pop in
+.loserCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,9 +11,9 @@
   left: 200%;
   padding: 2rem 1rem;
   gap: 2rem;
-  background: $colorBlue;
+  background: $colorDanger;
   border-radius: 10px;
-  box-shadow: 5px -5px 0 0 $colorDanger, 0 0 50px 5px $colorDark;
+  box-shadow: 5px -5px 0 0 $colorOrange, 0 0 50px 5px $colorDark;
   overflow: hidden;
   @include sizeNoMobile {
     top: 10%;
@@ -68,6 +68,7 @@
         width: 100%;
         padding: 0.5rem;
         font-size: 1.1rem;
+        background: $colorDark;
         &Logo {
           width: 60px;
           opacity: 0.8;
@@ -101,48 +102,6 @@
           font-size: 2.2rem;
         }
       }
-      &BestTimes {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 2rem 0;
-        gap: 1.5rem;
-        &Title {
-          width: 100%;
-          font-size: 1.8rem;
-        }
-        &Container {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          gap: 0.8rem;
-          &Line {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            gap: 1rem;
-            &Ranking {
-              width: 20%;
-              font-size: 1.8rem;
-            }
-            &Score {
-              width: 25%;
-              font-size: 2.4rem;
-            }
-            &Time {
-              width: 35%;
-              font-size: 1.6rem;
-              font-style: italic;
-            }
-          }
-        }
-      }
     }
   }
   &Button {
@@ -151,10 +110,4 @@
       background: $colorDark;
     }
   }
-}
-.revealMessage {
-  animation: leftSwipe 500ms 0ms ease-in-out both;
-}
-.closeMessage {
-  animation: leftSwipe 500ms 0ms reverse ease-in-out both;
 }

@@ -2,25 +2,34 @@
 .results {
   &Title {
     width: 34%;
+    text-indent: 0;
+    padding: 0 0 0 2rem;
   }
   &Ban {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    &BestScore {
-      width: 34%;
-      &Text {
+    width: 66%;
+    &Block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+      gap: 0.5rem;
+      &Rank {
+        font-size: 1.6rem;
+      }
+      &Score {
+        font-size: 2rem;
+      }
+      &Date {
         font-size: 1.4rem;
         font-style: italic;
       }
-      &Value {
-        font-size: 2.5rem;
-        font-style: normal;
-      }
     }
-    &YourScore {
+    &BestScore {
       width: 34%;
       &Text {
         font-size: 1.4rem;

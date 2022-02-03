@@ -1,0 +1,19 @@
+// Style for header of the game board
+.gameBoardHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  &YourScore {
+    width: 34%;
+    &Text {
+      font-size: 1.4rem;
+      font-style: italic;
+    }
+    &Value {
+      font-size: 2.5rem;
+      font-style: normal;
+    }
+  }
+}
