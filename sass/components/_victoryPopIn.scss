@@ -153,7 +153,7 @@
   }
 }
 .revealMessage {
-  animation: leftSwipe 500ms 0ms ease-in-out both;
+  animation: leftSwipe 500ms 500ms ease-in-out both;
 }
 .closeMessage {
   animation: leftSwipe 500ms 0ms reverse ease-in-out both;

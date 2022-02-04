@@ -93,15 +93,21 @@ export const listenRestartButton = (elementToTarget) => {
     store.updateTimeRemaining(null);
     store.updateIsInGame(false);
     // Close Victory message if opened :
-    document.getElementById("victoryMessage").classList.remove("revealMessage");
-    setTimeout(() => {
-      document.getElementById("victoryMessage").classList.add("closeMessage");
-    }, 0);
+    if (document.getElementById("victoryMessage").classList.length > 1) {
+      document
+        .getElementById("victoryMessage")
+        .classList.remove("revealMessage");
+      setTimeout(() => {
+        document.getElementById("victoryMessage").classList.add("closeMessage");
+      }, 0);
+    }
     // Close Loser message if opened :
-    document.getElementById("loserMessage").classList.remove("revealMessage");
-    setTimeout(() => {
-      document.getElementById("loserMessage").classList.add("closeMessage");
-    }, 0);
+    if (document.getElementById("loserMessage").classList.length > 1) {
+      document.getElementById("loserMessage").classList.remove("revealMessage");
+      setTimeout(() => {
+        document.getElementById("loserMessage").classList.add("closeMessage");
+      }, 0);
+    }
     // Inject new random cards
     createCards.injectRandomCards();
     // Reset Timer
